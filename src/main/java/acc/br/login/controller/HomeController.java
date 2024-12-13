@@ -11,6 +11,7 @@ public class HomeController {
 
     /**
      * Handle GET requests to /home.
+     *
      * @return View name for home page
      */
     @GetMapping("/home")
@@ -20,10 +21,27 @@ public class HomeController {
 
     /**
      * Handle GET requests to /login.
+     *
      * @return View name for login page
      */
     @GetMapping("/login")
     public String login() {
         return "login"; // Maps to login.html
+    }
+
+
+    @GetMapping("/logout")
+    public String logout() {
+        return "/logout";
+    }
+
+    @GetMapping("/studentRegistration")
+    public String telaCadastro() {
+        return "studentRegistration";
+    }
+
+    @GetMapping("/")
+    public String index() {
+        return "index";
     }
 }
