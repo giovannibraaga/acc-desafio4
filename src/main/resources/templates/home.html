@@ -13,7 +13,9 @@
     <div class="collapse navbar-collapse">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link" href="/logout">Logout</a>
+                <form th:action="@{/logout}" method="post">
+                    <button class="btn btn-custom btn-lg" role="button">Logout</button>
+                </form>
             </li>
         </ul>
     </div>
@@ -24,7 +26,10 @@
         <h1 class="display-4">Welcome to the Home Page!</h1>
         <p class="lead">You have successfully logged in.</p>
         <hr class="my-4">
-        <a class="btn btn-custom btn-lg" href="/logout" role="button">Logout</a>
+        <form th:action="@{/logout}" method="post">
+            <button class="btn btn-custom btn-lg" role="button">Logout</button>
+        </form>
+
     </div>
 </div>
 

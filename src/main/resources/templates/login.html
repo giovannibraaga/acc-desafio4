@@ -6,6 +6,49 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="/css/styles.css" rel="stylesheet">
+    <style>
+        /* Basic styles for login and home pages */
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        .card {
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-header {
+            background-color: #007bff;
+            color: #fff;
+            font-size: 1.5rem;
+        }
+
+        .btn {
+            border-radius: 5px;
+        }
+
+        .btn-secondary {
+            background-color: #6c757d;
+            border-color: #6c757d;
+            text-decoration: none;
+        }
+
+        .btn-secondary:hover {
+            background-color: #5a6268;
+            border-color: #545b62;
+            text-decoration: none;
+        }
+
+        .botao-cadastro {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
 </head>
 <body>
 <div class="container mt-5">
@@ -26,6 +69,8 @@
                             <input type="password" id="password" name="password" class="form-control" required/>
                         </div>
                         <button type="submit" class="btn btn-primary">Login</button>
+                        <button class="btn btn-secondary"><a class="botao-cadastro" href="studentRegistration">Cadastre-se</a>
+                        </button>
                     </form>
                 </div>
             </div>

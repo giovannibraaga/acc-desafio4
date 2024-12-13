@@ -26,9 +26,16 @@ body {
 .btn-secondary {
     background-color: #6c757d;
     border-color: #6c757d;
+    text-decoration: none;
 }
 
 .btn-secondary:hover {
     background-color: #5a6268;
     border-color: #545b62;
+    text-decoration: none;
+}
+
+.botao-cadastro {
+    text-decoration: none;
+    color: white;
 }
